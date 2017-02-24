@@ -1,13 +1,14 @@
 package jp.co.kenshu.form.employee;
 
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class EmployeeListForm {
 	@NotEmpty
     private String name;
-	@NotEmpty
+	@NotNull
 	@Min(18)
     private Integer age;
     private String memo;

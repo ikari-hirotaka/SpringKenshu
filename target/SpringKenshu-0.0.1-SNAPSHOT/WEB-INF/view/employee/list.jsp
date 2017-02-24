@@ -14,6 +14,11 @@
     <p>
         <c:out value="${message}"></c:out>
     </p>
+
+    <form:form modelAttribute="employeeListForm">
+	<div><form:errors path="*"  /></div>
+	</form:form>
+
     <form:form modelAttribute="employeeListForm">
         <table>
             <tbody>
